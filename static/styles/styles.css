@@ -1,0 +1,130 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Consolas, monospace, sans-serif;
+	font-size: 80%;
+	color: white;
+}
+
+:root {
+	--color-green: #8AFF80;
+	--color-soft-orange: #FFCA80;
+	--color-pink: #FF80BF;
+	--color-purple: #9580FF;
+	--color-orange: #FF9580;
+	--color-yellow: #FFFF80;
+	--color-black: #15171B;
+	--color-gray: #1D1E26;
+}
+
+#main-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-color: var(--color-gray);
+}
+
+
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	position: absolute;
+
+	width: 30%;
+	height: 100%;
+	z-index: 1;
+
+	background-color: var(--color-black);
+}
+
+.navbar > * {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 0.5rem;
+
+	color: white;
+	text-decoration: none;
+}
+
+#app-logo {
+	width: 8rem;
+}
+
+.navbar-icon {
+	width: 3rem;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+}
+
+.blur {
+	filter: blur(1px);
+}
+
+
+.page-header {
+	display: flex;
+
+	align-items: center;
+
+	padding: 1rem;
+	text-align: center;
+
+	background-color: var(--color-black);
+}
+
+.page-header > * {
+	margin-right: auto;
+}
+
+#hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	
+	gap: 0.3rem;
+}
+
+#hamburger-menu > * {
+	width: 2rem;
+	height: 0.3rem;
+
+	background-color: white;	
+}
+
+
+/*
+	max-width: Solo aplica los estilos del limite hacia abajo. Ejemplo:
+	@media screen and (max-width:500px) { Solo se activan estos estilos cuando la pantalla mide 500px o menos }
+
+
+	min-width: Solo aplica los estilos cuando sobrepasa el limite. Ejemplo:
+	@media screen and (min-width: 500px) { Solo se aplican estos estilos cuando la pantalla es mas grande que 500px }
+*/
+
+/*@media only screen and (min-width) {
+
+}*/

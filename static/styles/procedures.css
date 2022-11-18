@@ -1,0 +1,20 @@
+.procedures-wrapper {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	gap: 1rem;
+	flex-grow: 1;
+	padding: 1rem;
+
+	overflow-y: auto;
+	background-color: var(--color-pink);
+}
+
+.procedures-wrapper > * {
+	width: 90%;
+	height: 10rem;
+
+	background-color: var(--color-black);
+}

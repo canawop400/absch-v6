@@ -63,8 +63,7 @@
 	}
 
 	.gallery-image {
-		width: 40rem;
-		height: 20rem;
+		width: 60rem; /* Old value:  width: 40rem; */
 	}
 
 	.page-info {

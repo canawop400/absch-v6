@@ -40,3 +40,26 @@
 	border-radius: 100%;
 	background-color: var(--color-green);
 }
+
+
+
+@media screen and (min-width: 500px) {
+	.page-content {
+		overflow-y: auto;
+		padding: 1rem 5rem;
+	}
+
+	.gallery {
+		display: flex;
+		justify-content: center;
+	}
+
+	.gallery-image {
+		width: 40rem;
+		height: 20rem;
+	}
+
+	.page-info {
+		flex-direction: row;
+	}
+}

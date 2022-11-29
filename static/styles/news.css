@@ -1,4 +1,4 @@
-.procedures-wrapper {
+.news-wrapper {
 	display: flex;
 	flex-direction: column;
 
@@ -8,23 +8,30 @@
 	padding: 1rem;
 }
 
-.procedure {
+.new {
 	display: flex;
 	flex-direction: column;
 
-	justify-content: space-around;
-	text-align: center;
+	align-items: center;
 
 	width: 90%;
-	height: 10rem;
+	height: 30rem;
 
 	border-radius: 1rem;
 	background-color: var(--color-black);
 }
 
-.procedure-button {
+.new-image {
+	width: 100%;
+	height: 15rem;
+	margin-bottom: 2rem;
+
+	border-radius: 1rem;
+}
+
+.new-button {
 	padding: 0.5rem 1.75rem;
-	margin: 0px 1rem 0px auto;
+	margin-top: 7rem;
 
 	cursor: pointer;
 
@@ -33,28 +40,25 @@
 	border: 0.2rem solid var(--color-green);
 }
 
-.procedure-button:active {
+.new-button:active {
 	color: var(--color-black);
 	background-color: var(--color-green);
 }
 
 
-
 @media screen and (min-width: 500px) {
-	.procedures-wrapper {
+	.news-wrapper {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: row;
+		flex-wrap: wrap;
 
 		justify-content: center;
-
+		
 		overflow-y: auto;
-		padding: 1rem 5rem;
 	}
 
-	.procedure {
-		width: 30rem;
-		height: 12rem;
+	.new {
 		flex-shrink: 0;
+		width: 20rem;
 	}
 }

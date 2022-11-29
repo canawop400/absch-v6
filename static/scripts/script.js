@@ -11,7 +11,6 @@ function all() {
 		}
 
 		if ((!(hamburgerMenu.contains(event.target))) && !(navbar.contains(event.target))) {
-
 			navbar.classList.add("hidden");
 			main.classList.remove("blur");
 		}

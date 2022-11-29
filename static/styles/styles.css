@@ -79,6 +79,7 @@ html {
 	flex-direction: column;
 
 	flex-grow: 1;
+	overflow-y: auto;
 }
 
 .blur {
@@ -125,6 +126,57 @@ html {
 	@media screen and (min-width: 500px) { Solo se aplican estos estilos cuando la pantalla es mas grande que 500px }
 */
 
-/*@media only screen and (min-width) {
 
-}*/
+@media screen and (min-width: 500px) {
+	html {
+		font-size: 100%;
+	}
+
+	#main-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.main {
+		overflow-y: unset;
+	}
+
+	.navbar {
+		display: flex;
+		position: static;
+
+		width: 8rem;
+		height: 100%;
+
+		background-color: var(--color-black);
+	}
+
+	#hamburger-menu {
+		display: none;
+	}
+
+	.page-header {
+		text-align: center;
+		background-color: inherit;
+	}
+
+	.page-header > h1 {
+		width: 85%;
+		padding: 0.5rem;
+
+		margin: auto;
+
+		border-radius: 1rem;
+		background-color: var(--color-black);
+	}
+
+	.page-header > h1::before, .page-header > h1::after {
+		content:  "";
+		display: inline-block;
+		width: 0.8rem;
+		height: 0.8rem;
+		margin: 0px 1rem;
+		border-radius: 100%;
+		background-color: var(--color-green);
+	}
+}

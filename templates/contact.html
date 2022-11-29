@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="/static/styles/styles.css">
-		<link type="text/css" rel="stylesheet" href="/static/Tramites.css">
+		<link type="text/css" rel="stylesheet" href="/static/styles/contact.css">
 
 		<title>ABSCH - Contacto</title>
 	</head>
@@ -50,7 +50,36 @@
 				</header>
 
 				<section class="page-content">
+					<section>
+						<h3>¡Envianos un correo!</h3>
 
+						<form action="/api/contact/" class="contact-form">
+							<label for="name">
+								<span>Nombre</span>
+								<input type="text" name="name" id="name" placeholder="Jhon Doe">
+							</label>
+
+							<label for="email">
+								<span>Email</span>
+								<input type="email" name="email" id="email" placeholder="email@cbtis206.com">
+							</label>
+
+							<label for="message">
+								<span>Mensaje</span>
+								<textarea name="message" id="message" cols="30" rows="10" placeholder="..."></textarea>
+							</label>
+
+							<div class="form-button">Enviar</div>
+						</form>
+					</section>
+
+					<section>
+						<h3>¡Encuentranos!</h3>
+
+						<img src="/static/images/map.png" alt="Map" class="school-map">
+
+						<p class="address">Calle República de Colombia & Potam, Mision, 83178 Hermosillo, Sonora, México.</p>
+					</section>
 				</section>
 			</main>
 		</div>

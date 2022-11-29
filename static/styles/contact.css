@@ -1,0 +1,83 @@
+.page-content {
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+	gap: 5rem;
+
+	align-items: center;
+
+	padding: 2rem 1rem;
+}
+
+h3 {
+	text-align: center;
+}
+
+h3::before, h3::after {
+	content: "";
+	display: inline-block;
+	width: 0.5rem;	
+	height: 0.5rem;
+	margin: 0px 0.5rem;
+	border-radius: 100%;
+	background-color: var(--color-green);
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+
+	width: 25rem;
+
+	gap: 1rem;
+}
+
+.page-content > section {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	gap: 1.5rem;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-button {
+	width: 10rem;
+	padding: 0.5rem 1.75rem;
+	margin: auto;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: white;
+	border-radius: 1rem;
+	border: 0.2rem solid var(--color-green);
+}
+
+
+.school-map, .address {
+	width: 25rem;
+}
+
+
+
+@media screen and (min-width: 500px) {
+	.page-content {
+		overflow-y: auto;
+	}
+
+	.contact-form {
+		width: 50rem;
+	}
+
+	.school-map, .address {
+		width: 50rem;
+	}
+}

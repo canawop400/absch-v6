@@ -1,0 +1,90 @@
+.procedure {
+	display: flex;
+
+	flex-grow: 1;
+}
+
+.procedure-form {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: space-around;
+
+	gap: 3rem;
+
+	padding: 3rem 1rem;
+
+	flex-grow: 1;
+}
+
+.procedure-form > label {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.5rem;
+}
+
+label > span::before, label > span::after {
+	content:  "";
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0px 0.5rem;
+	border-radius: 1rem;
+	background-color: var(--color-green);
+}
+
+input {
+	width: 25rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	padding: 0.5rem 1.75rem;
+
+	cursor: pointer;
+
+	border-radius: 1rem;
+	color: white;
+	background-color: transparent;
+}
+
+.submit {
+	border: 0.2rem solid var(--color-green);
+}
+
+.submit:active {
+	color: var(--color-black);
+	background-color: var(--color-green);
+}
+
+.cancel {
+	border: 0.2rem solid var(--color-orange);
+}
+
+.cancel:active {
+	color: var(--color-black);
+	background-color: var(--color-orange);
+}
+
+
+@media screen and (min-width: 500px) {
+	.procedure {
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.procedure-form {
+		flex-grow: 0;
+
+		padding: 3rem;
+
+		border-radius: 1rem;
+		background-color: var(--color-black);
+	}
+}

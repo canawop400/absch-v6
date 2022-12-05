@@ -1,0 +1,91 @@
+.form-container {
+	display: flex;
+	padding: 5rem 1rem;
+	flex-grow: 1;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	gap: 3rem;
+
+	flex-grow: 1;
+}
+
+.form > label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+label > span::before, label > span::after {
+	content: "";
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: var(--color-green);
+	border-radius: 100%;
+	margin: 0px 0.5rem;
+}
+
+input, textarea {
+	width: 25rem;
+}
+
+.button {
+	padding: 0.5rem 1.75rem;
+
+	cursor: pointer;
+
+	border-radius: 1rem;
+	color: white;
+	background-color: transparent;
+}
+
+.submit {
+	border: 0.2rem solid var(--color-green);
+}
+
+.submit:active {
+	color: var(--color-black);
+	background-color: var(--color-green);
+}
+
+.cancel {
+	border: 0.2rem solid var(--color-orange);
+}
+
+.cancel:active {
+	color: var(--color-black);
+	background-color: var(--color-orange);
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+	.form-container {
+		width: 50%;
+		padding: 1rem;
+		margin: 1rem auto;
+
+		border-radius: 1rem;
+		background-color: var(--color-black);
+	}
+
+	.form {
+		justify-content: space-around;
+		gap: 0px;
+	}
+
+	textarea {
+		width: 25rem;
+		height: 15rem;
+	}
+}

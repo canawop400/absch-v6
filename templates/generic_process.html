@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="/static/styles/styles.css">
-		<link type="text/css" rel="stylesheet" href="/static/styles/contact.css">
+		<link type="text/css" rel="stylesheet" href="/static/styles/generic_process.css">
 
-		<title>ABSCH - Contacto</title>
+		<title>ABSCH - Tramites</title>
 	</head>
 
 	<body>
@@ -46,40 +46,39 @@
 						<span></span>
 					</div>
 
-					<h1>Contacto</h1>
+					<h1>{{ name }}</h1>
 				</header>
 
-				<section class="page-content">
-					<section>
-						<h3>¡Envianos un correo!</h3>
+				<section class="procedure">
+					<form class="procedure-form">
+						<label for="name">
+							<span>Nombre</span>
+							<input type="text" id="name" placeholder="Sebastian">
+						</label>
 
-						<form action="/api/contact/" class="contact-form">
-							<label for="name">
-								<span>Nombre</span>
-								<input type="text" name="name" id="name" placeholder="Jhon Doe">
-							</label>
+						<label for="last-names">
+							<span>Apellidos</span>
+							<input type="text" id="last-names" placeholder="Mendoza Vasquez">
+						</label>
 
-							<label for="email">
-								<span>Email</span>
-								<input type="email" name="email" id="email" placeholder="email@cbtis206.com">
-							</label>
+						<label for="curp">
+							<span>Curp</span>
+							<input type="text" id="curp" placeholder="S313B1U31MNV1Z">
+						</label>
 
-							<label for="message">
-								<span>Mensaje</span>
-								<textarea name="message" id="message" cols="30" rows="10" placeholder="..."></textarea>
-							</label>
+						<label for="control-number">
+							<span>Numero de control</span>
+							<input type="text" id="control-number" placeholder="C0381724">
+						</label>
 
-							<div id="submit" class="form-button">Enviar</div>
-						</form>
-					</section>
+						<div class="buttons">
+							<a href="/tramites/">
+								<button type="button" class="cancel button" id="cancel">Atras</button>
+							</a>
+							<button type="button" class="submit button" id="submit">Enviar</button>
+						</div>
 
-					<section>
-						<h3>¡Encuentranos!</h3>
-
-						<img src="/static/images/map.png" alt="Map" class="school-map">
-
-						<p class="address">Calle República de Colombia & Potam, Mision, 83178 Hermosillo, Sonora, México.</p>
-					</section>
+					</form>
 				</section>
 			</main>
 		</div>

@@ -61,6 +61,11 @@ label {
 	border: 0.2rem solid var(--color-green);
 }
 
+.form-button:active {
+	color: black;
+	background-color: var(--color-green);
+}
+
 
 .school-map, .address {
 	width: 25rem;
